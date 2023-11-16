@@ -108,6 +108,7 @@
     animation-name: rotation;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes rotation {
@@ -198,6 +199,7 @@
     animation-name: move-top;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
 
@@ -219,6 +221,7 @@
     animation-name: move-bot;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    animation-timing-function: linear;
 }
 
 @keyframes move-bot {
@@ -232,5 +235,85 @@
 
     100% {
         right: 20%;
+    }
+}
+
+/* SOLUTION 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: circle-top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-top {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    20% {
+        left: calc(100% - 40px);
+        top: -10px;
+    }
+
+    40% {
+        left: calc(100% - 40px);
+        top: 50px;
+    }
+
+    60% {
+        left: -10%;
+        top: 50px;
+    }
+
+    80% {
+        left: -10%;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: circle-bot;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes circle-bot {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    20% {
+        right: 80%;
+        bottom: -10px;
+    }
+
+    40% {
+        right: 80%;
+        bottom: 50px;
+    }
+
+    60% {
+        right: -10%;
+        bottom: 50px
+    }
+
+    80% {
+        right: -10%;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
     }
 }
