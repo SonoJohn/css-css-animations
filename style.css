@@ -50,6 +50,7 @@
     transition: all 1s;
 }
 
+/* SOLUTION */
 .ex-5-square:hover {
     transform: scale(2);
 }
@@ -64,6 +65,7 @@
     width: 500px;
 }
 
+/* SOLUTION */
 .ex-6-img:hover {
     filter: grayscale(1);
 }
@@ -72,6 +74,7 @@
     transition: filter 1s;
 }
 
+/* SOLUTION */
 .ex-7-img:hover {
     filter: grayscale(1) blur(5px);
 }
@@ -80,6 +83,7 @@
     transition: all 2s;
 }
 
+/* SOLUTION */
 .ex-8-img:hover {
     filter: grayscale(.5) sepia(.2);
     border-radius: 25px;
@@ -91,12 +95,14 @@
     transition: all 2s;
 }
 
+/* SOLUTION */
 .ex-9-img:hover {
     filter: grayscale(.5) sepia(.2);
     border-radius: 25px;
     transform: scale(1.5);
 }
 
+/* SOLUTION */
 .ex-10-icon {
     font-size: 60px;
     animation-name: rotation;
@@ -131,6 +137,7 @@
     font-size: 60px;
 }
 
+/* SOLUTION */
 .ex-11-icon:hover {
     animation-name: rotate;
     animation-duration: 2s;
@@ -183,4 +190,47 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+/* SOLUTION 12 */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: move-top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes move-top {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: move-bot;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes move-bot {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 20%;
+    }
 }
