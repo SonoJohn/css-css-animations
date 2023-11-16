@@ -76,9 +76,25 @@
     filter: grayscale(1) blur(5px);
 }
 
+.ex-8-img {
+    transition: all 2s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(.5) sepia(.2);
+    border-radius: 25px;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(.5) sepia(.2);
+    border-radius: 25px;
+    transform: scale(1.5);
 }
 
 .ex-10-icon {
